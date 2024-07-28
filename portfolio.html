@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Bootstrap</title>
+    <!-- fontawsome -->
+    <link rel="stylesheet" href="./css/all.min.css">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <!-- custom css -->
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <div class="d-flex flex-column flex-md-row bg-warning">
+        <div class="d-flex flex-md-column">
+            <div>
+                <img src="./images/grin-smile.png" class="profile-pic bg-dark-subtle p-2" alt="">
+            </div>
+            <div class="main-menu text-center text-uppercase py-5 d-none d-sm-block">
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                      <a class="nav-link text-dark fw-bold" href="./index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link text-dark fw-bold" href="./about-me.html">About me</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link text-dark fw-bold" href="./resume.html">Resume</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link text-white fw-bold" href="./portfolio.html">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link text-dark fw-bold" href="./testmonials.html">Testmonials</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link text-dark fw-bold" href="./contact.html">Contact</a>
+                    </li>
+                  </ul>
+            </div>
+        </div>
+        <div class="text-center d-sm-none">
+            <a class="btn btn-warning" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+                <i class="fa-solid fa-bars fs-1"></i><span class="fs-1 ps-3">Portfolio</span>
+              </a>
+              
+              <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                <div class="offcanvas-header bg-light">
+                  <h5 class="offcanvas-title" id="offcanvasExampleLabel">Portfolio</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body bg-warning">
+                  <ul class="list-group list-group-flush">
+                    <li class="bg-warning list-group-item"><a class="text-decoration-none fw-bold text-dark" href="./index.html">Home</a></li>
+                    <li class="bg-warning list-group-item"><a class="text-decoration-none fw-bold text-dark" href="./about-me.html">About me</a></li>
+                    <li class="bg-warning list-group-item"><a class="text-decoration-none fw-bold text-dark" href="./resume.html">Resume</a></li>
+                    <li class="bg-warning list-group-item"><a class="text-decoration-none fw-bold text-white" href="./portfolio.html">Portfolio</a></li>
+                    <li class="bg-warning list-group-item"><a class="text-decoration-none fw-bold text-dark" href="./testmonials.html">Testmonials</a></li>
+                    <li class="bg-warning list-group-item"><a class="text-decoration-none fw-bold text-dark" href="./contact.html">Contact</a></li>
+                  </ul>
+                </div>
+              </div>
+        </div>
+        <div class="container bg-light">
+            <div class="row p-5">
+                <h1 class="display-5 fw-bolder text-uppercase text-center p-3 border border-3 border-dark-subtle mb-1">Portfolio</h1>
+            </div>
+            <div class="row">
+                <div class="col-2"></div>
+                <div class="col-8 main-text-bg">
+                    <div class="main-text">
+                        <div class="portfolio-menu py-4">
+                            <ul class="nav justify-content-center">
+                                <li class="list nav-item px-3 fw-bold text-warning" data-filter="all">All</li>
+                                <li class="list nav-item px-3 fw-bold" data-filter="graphic">Graphic Design</li>
+                                <li class="list nav-item px-3 fw-bold" data-filter="web">Web Design</li>
+                                <li class="list nav-item px-3 fw-bold" data-filter="photo">Photography</li>
+                            </ul>
+                        </div>
+                        <div class="portfolio-img d-flex">
+                            <div class="listitems" data-item="web">
+                                <img class="w-100 p-2" src="./images/8e5b63a77778f75a352c410f5839b11d.jpg" alt="">
+                            </div>
+                            <div class="listitems" data-item="graphic">
+                                <img class="w-100 p-2" src="./images/b1f5ced646b729f1ecd317f99017624f.jpg" alt="">
+                            </div>
+                            <div class="listitems" data-item="photo">
+                                <img class="w-100 p-2" src="./images/c45188283245d45eec3bd21f11139f88.jpg" alt="">
+                            </div>
+                            <div class="listitems" data-item="web">
+                                <img class="w-100 p-2" src="./images/ed7d73cf3a3c5feb61962696795a9f8b.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-2"></div>
+            </div>
+        </div>
+    </div>
+    <div class="icon-menu position-fixed top-0 end-0 d-none d-md-block">
+        <ul>
+            <li><a href="./index.html"><i class="fa-solid fa-house"></i></a></li>
+            <li><a href="./about-me.html"><i class="fa-solid fa-user"></i></a></li>
+            <li><a href="./resume.html"><i class="fa-solid fa-briefcase"></i></a></li>
+            <li><a href="./portfolio.html"><i class="fa-solid fa-desktop"></i></a></li>
+            <li><a href="./testmonials.html"><i class="fa-solid fa-bullhorn"></i></a></li>
+            <li><a href="./contact.html"><i class="fa-regular fa-paper-plane"></i></a></li>
+        </ul>
+    </div>
+    <script src="./js/jquery-3.7.1.min.js"></script>
+    <!-- bootstrap js -->
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script>
+        let list = $('.list');
+        let listItems = $('.listitems')
+        for (let i = 0; i < list.length; i++) {
+            $(list[i]).on('click', function() {
+                for (let j = 0; j < list.length; j++) {
+                    $(list[j]).removeClass('text-warning');
+                }
+                $(this).addClass('text-warning');
+
+                let dataAttValue = $(this).attr('data-filter');
+
+                for (let k = 0; k < listItems.length; k++) {
+                    $(listItems[k]).removeClass('active');
+                    $(listItems[k]).addClass('hide');
+                    if ($(listItems[k]).attr('data-item') == dataAttValue || dataAttValue == 'all') {
+                        $(listItems[k]).removeClass('hide');
+                        $(listItems[k]).addClass('active');
+                    }
+                }
+            });
+        }
+    </script>
+    <script src="./js/custom.js"></script>
+</body>
+</html>

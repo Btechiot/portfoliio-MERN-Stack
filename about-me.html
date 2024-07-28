@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Bootstrap</title>
+    <!-- fontawsome -->
+    <link rel="stylesheet" href="./css/all.min.css">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <!-- custom css -->
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <div class="d-flex flex-column flex-md-row bg-warning">
+        <div class="d-flex flex-md-column">
+            <div>
+                <img src="./images/grin-smile.png" class="profile-pic bg-dark-subtle p-2" alt="">
+            </div>
+            <div class="main-menu text-center text-uppercase py-5 d-none d-sm-block">
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                      <a class="nav-link text-dark fw-bold" href="./index.html">Home</a>
+                    </li>
+                    <li class="nav-item"> 
+                      <a class="nav-link text-dark fw-bold text-white" href="./about-me.html">About me</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link text-dark fw-bold" href="./resume.html">Resume</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link text-dark fw-bold" href="./portfolio.html">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link text-dark fw-bold" href="./testmonials.html">Testmonials</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link text-dark fw-bold" href="./contact.html">Contact</a>
+                    </li>
+                  </ul>
+            </div>
+        </div>
+        <div class="text-center d-sm-none">
+            <a class="btn btn-warning" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+                <i class="fa-solid fa-bars fs-1"></i><span class="fs-1 ps-3">Portfolio</span>
+              </a>
+              
+              <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                <div class="offcanvas-header bg-light">
+                  <h5 class="offcanvas-title" id="offcanvasExampleLabel">Portfolio</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body bg-warning">
+                  <ul class="list-group list-group-flush">
+                    <li class="bg-warning list-group-item"><a class="text-decoration-none fw-bold text-dark" href="./index.html">Home</a></li>
+                    <li class="bg-warning list-group-item"><a class="text-decoration-none fw-bold text-white" href="./about-me.html">About me</a></li>
+                    <li class="bg-warning list-group-item"><a class="text-decoration-none fw-bold text-dark" href="./resume.html">Resume</a></li>
+                    <li class="bg-warning list-group-item"><a class="text-decoration-none fw-bold text-dark" href="./portfolio.html">Portfolio</a></li>
+                    <li class="bg-warning list-group-item"><a class="text-decoration-none fw-bold text-dark" href="./testmonials.html">Testmonials</a></li>
+                    <li class="bg-warning list-group-item"><a class="text-decoration-none fw-bold text-dark" href="./contact.html">Contact</a></li>
+                  </ul>
+                </div>
+              </div>
+        </div>
+        <div class="container bg-light">
+            <div class="row p-5">
+                <h1 class="display-5 fw-bolder text-uppercase text-center p-3 border border-3 border-dark-subtle mb-5">About</h1>
+                <h2 class="fs-3">I'm <span class="fw-bold">Shiva Kumar</span>, Junior Web Developer</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores, numquam, repellendus expedita eos saepe eius cupiditate culpa magni ut fuga harum omnis mollitia ipsa autem at adipisci sed dolorem dicta.</p>
+            </div>
+            <div class="row">
+                <!-- section 1 -->
+                <div class="col-md-6">
+                    <div class="bg-dark text-white p-5">
+                        <div class="row">
+                            <div class="col-6 border-end border-white border-2">
+                                <h3><span class="counter" data-count="15">0</span><span class="plus"><sup>+</sup></span></h3>
+                                <p>Years of Experience</p>
+                                <div class="border-bottom border-2 border-white my-3"></div>
+                            </div>
+                            <div class="col-6">
+                                <h3><span class="counter" data-count="350">0</span><span class="plus"><sup>+</sup></span></h3>
+                                <p>Projects Done</p>
+                                <div class="border-bottom border-2 border-white my-4"></div>
+                            </div>
+                        </div>
+                        <div></div>
+                        <div class="row">
+                            <div class="col-6 border-end border-2 border-white">
+                                <h3><span class="counter" data-count="280">0</span><span class="plus"><sup>+</sup></span></h3>
+                                <p>Happy Clients</p>
+                            </div>
+                            <div class="col-6">
+                                <h3><span class="counter" data-count="45">0</span><span class="plus">K</span></h3>
+                                <p>Followers</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- section 2 -->
+                <div class="col-md-6">
+                    <div class="p-4">
+                        <h2 class="fs-3 fw-bold">What I Do?</h2>
+                        <div>
+                            <i class="fa-solid fa-bezier-curve fs-2"></i>
+                            <div>
+                                <h4 class="fs-5">Print Design</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit odit accusamus doloribus asperiores sapiente ratione</p>
+                            </div>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-laptop-code fs-2"></i>
+                            <div>
+                                <h4 class="fs-5">Web Designer</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit odit accusamus doloribus asperiores sapiente ratione</p>
+                            </div>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-people-group fs-2"></i>
+                            <div>
+                                <h4 class="fs-5">Digital Marketing</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit odit accusamus doloribus asperiores sapiente ratione</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="icon-menu position-fixed top-0 end-0 d-none d-md-block">
+        <ul>
+            <li><a href="./index.html"><i class="fa-solid fa-house"></i></a></li>
+            <li><a href="./about-me.html"><i class="fa-solid fa-user active"></i></a></li>
+            <li><a href="./resume.html"><i class="fa-solid fa-briefcase"></i></a></li>
+            <li><a href="./portfolio.html"><i class="fa-solid fa-desktop"></i></a></li>
+            <li><a href="./testmonials.html"><i class="fa-solid fa-bullhorn"></i></a></li>
+            <li><a href="./contact.html"><i class="fa-regular fa-paper-plane"></i></a></li>
+        </ul>
+    </div>
+    <script src="./js/jquery-3.7.1.min.js"></script>
+    <!-- bootstrap js -->
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script>
+        $('.counter').each(function() {
+            var $this = $(this),
+                countTo = $this.attr('data-count');
+            $({
+                countNum: $this.text()
+            }).animate({
+                countNum: countTo
+            }, {
+                duration: 3000,
+                easing: 'linear',
+                step: function() {
+                    $this.text(Math.floor(this.countNum));
+                },
+                complete: function() {
+                    $this.text(this.countNum);
+                }
+            });
+        });
+    </script>
+    <script src="./js/custom.js"></script>
+</body>
+</html>
